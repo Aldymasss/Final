@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #7AB2B2;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    background-color: #7AB2B2;
+    text-align: center;
+    font-weight: bold;
+}
+
+img{
+  width: 100%;
+  display: flex;
+}
+
+nav a {
+    padding: 5px 10px;
+    color: #0c0d0d;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .profile header{
+    text-align: center;
+  }
+
+  .featured-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .profile img{
+    width: 200px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  nav {
+    max-width: 1200px;
+    margin:  auto;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  nav{
+    background-color: #ffffff00;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+
+  .nav p{
+    font-weight: bolder;
+  }
+   
+  nav a:hover {
+    font-weight: bold;
+  }
+
+  .nav-logo{
+    background: #ffffff00;
+  }
+
+  .nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  header{
+    display: inline;
+  }
+
+
+  main{
+    padding: 25px;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  #content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+  aside{
+    flex: 1;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #content, aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  /* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+      }
+      main aside {
+        align-self: center;
+      }
+    }
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+      }
+      main aside {
+        align-self: stretch;
+      }
+    }
+
+h3 {
+  text-align: center;
+  display: block;
+  margin: 50px;
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  display: inline-block;
+  margin: 20px;
+}
+
+.social img {
+  width: 75px;
+  height: 75px;
+  filter: grayscale(100%) invert(100%);
+}
